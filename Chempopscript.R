@@ -1,6 +1,6 @@
 #Import regional datasets containing species counts (Do for all 7 regions)
-#merge regional taxon datasets
 angliataxondata<-read.csv('Anglian_taxon_data_final_SPECIES.csv')
+#merge regional taxon datasets
 taxondataallregions<-merge(angliataxondata,midlandstaxondata,northeasttaxondata,northwesttaxondata,southerntaxondata,thamestaxondata,southwesttaxondata,by='REGION')
 #Import regional datasets containing biotic index values (Do for all 7 regions)
 angliasamplemaster<-read.csv('SamplemasterAnglia.csv') 
